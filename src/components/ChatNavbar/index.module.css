@@ -1,0 +1,128 @@
+
+.navbarSection {
+    width: 100%;
+    height: 100%;
+    background-color: #282828;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.22);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 16px;
+}
+
+.navbarSection > .navbarUserInfo{
+    flex: 1;
+}
+
+.navbarSection > .navbarRight{
+    background-color: #181818;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 200ms all;
+    cursor: pointer;
+}
+
+.navbarSection > .navbarRight:hover {
+    background-color: black;
+}
+
+.navbarSection > .navbarRight img{
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    transition: 200ms all;
+}
+
+.navbarSection > .navbarRight:hover img{
+    transform: scale(1.05);
+}
+
+.navbarSection > .backIcon{
+    background-color: #181818;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 4px;
+    transition: 200ms all;
+    cursor: pointer;
+}
+
+.navbarSection > .backIcon:hover{
+    background-color: #080808;
+}
+
+.navbarSection > .backIcon img{
+    width: 13px;
+    height: 13px;   
+    max-width: 13px;
+    max-height: 13px; 
+    object-fit: cover;
+}
+
+.navbarImage{
+    width: 48px;
+    height: 48px;   
+    max-width: 48px;
+    max-height: 48px;   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-right: 6px;
+}
+
+.navbarImage::after {
+    content: "";
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    max-width: 11px;
+    max-height: 11px;
+    background-color: yellowgreen;
+    border-radius: 50%;
+    border: 3px solid #282828;
+    bottom: -2px;
+    right: -2px;
+}
+
+.navbarImage img{
+    width: 40px;
+    height: 40px;   
+    max-width: 40px;
+    max-height: 40px;   
+    background-color: #AAAAAA;
+    border-radius: 10px;
+}
+
+.navbarUserInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.navbarUserInfo h3, .navbarUserInfo h6{
+    margin: 0;
+}
+
+.navbarUserInfo h3 a{
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 2px;
+    text-decoration: none;
+}
+
+.navbarUserInfo h6{
+    font-weight: 400;
+    font-size: 12px;
+    color: #AAAAAA;
+}
